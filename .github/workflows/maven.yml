@@ -27,7 +27,7 @@ name: CI
 on:
   push:
   pull_request:
-    branches: [ "master" ]
+    branches: [ "release-ranger-2.6.0" ]
 
 env:
   MAVEN_OPTS: -Dhttp.keepAlive=false -Dmaven.wagon.http.pool=false -Dmaven.wagon.http.retryHandler.class=standard -Dmaven.wagon.http.retryHandler.count=3
