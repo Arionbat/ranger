@@ -59,7 +59,6 @@ import org.apache.solr.common.cloud.ZkConfigManager;
 import org.noggit.JSONParser;
 import org.noggit.ObjectBuilder;
 
-import com.google.protobuf.TextFormat.ParseException;
 
 public class SolrCollectionBootstrapper extends Thread {
 
@@ -435,7 +434,7 @@ public class SolrCollectionBootstrapper extends Thread {
 	}
 
 	@SuppressWarnings("unchecked")
-	private List<String> getCollections() throws IOException, ParseException {
+	private List<String> getCollections() throws IOException {
 		try {
 			CollectionAdminRequest.List colListReq = new CollectionAdminRequest.List();
 			CollectionAdminResponse response = colListReq.process(solrClient);
